@@ -1,0 +1,8 @@
+version: '2'
+services:
+  mosquitto:
+    restart: always
+    build: ./mosquitto
+    ports:
+      - "1883:1883"
+      - "1884:1884"
